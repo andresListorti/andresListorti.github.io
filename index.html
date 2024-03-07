@@ -4,60 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genaro | Zapatos e Indumentaria de cuero para Hombre y mujer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    
     <!-- Inicio Header-->
     <header>
-      <nav>
-        <picture>
-          <a href="#"><img src="" alt="Logo" /></a>
-        </picture>
+      <div class="logo">
+        <a href="#">Genaro</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/acceso.html">Acceso</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li class="cart">
+            <a href="./pages/carro.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
-      <ul>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/acceso.html">Acceso</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-        <li><a href="./pages/carro.html">Carro</a></li>
-      </ul>
     </header>
     <!-- Fin Header -->
+    <!-- Inicio Hero -->
+    <section class="hero">
+      <video
+        src="./resources/shoes_-_11284 (720p) (1).mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <article class="hero__content">
+        <h3 class="hero__title">Nuevos Ingresos</h3>
+        <p class="hero__text">Agrega el modelo T-650 a tu colección</p>
+        <a class="hero__link" href="./pages/productos.html">Ver Productos</a>
+      </article>
+    </section>
+    <!-- Fin Hero  -->
+    <h2>Collecciones</h2>
     <!-- Inicio Main  -->
     <main>
-        <!-- Inicio Hero -->
-        <section class="hero">
-          <article class="hero__content container">
-            <h3 class="hero__title">Nuevos Ingresos</h3>
-            <p class="hero__text">Agrega el modelo nombre_T-650 a tu coleccion</p>
-            <a class="hero__link" href="shop">Productos</a>
-          </article>
-        </section>
-        <!-- Fin Hero  -->
       <!-- Inicio Section  -->
-      <section class="collection container">
-        <article class="collection__content">
-          <h3 class="collection__title">Articulo_R-50</h3>
-          <p class="collection__text">
-            Atrapa todos los que puedas y disfruta
-          </p>
-          <a class="collection__link" href="/shop?filter=licence-1"
-            >VER COLECCIÓN</a
+      <section class="collection">
+        
+          <a class="collection__link" href="./pages/mujer.html"
+            ><picture class="collection__cover">
+              <img
+                src="./resources/woman-2179062_1920.jpg"
+                alt="imgProd"
+                width="600px"
+                height="900px"
+              />
+            </picture>
+            <article class="collection__content">
+              <h3 class="collection__title">Mujer</h3>
+              <p class="collection__text">Atrapa todos los que puedas y disfruta</p></a
           >
         </article>
-        <picture class="collection__cover">
-          <img
-            src=""
-            alt="Logo"
-          />
-        </picture>
+      </section>
+      <!-- Fin Section -->
+      <!-- Inicio Section  -->
+      <section class="collection">
+        
+          <a class="collection__link" href="./pages/hombre.html"
+            ><picture class="collection__cover">
+              <img
+                src="./resources/shoes-877939_1920.jpg"
+                alt="imgProd"
+                width="600px"
+                height="900px"
+              />
+            </picture>
+            <article class="collection__content">
+              <h3 class="collection__title">Hombre</h3>
+              <p class="collection__text">Atrapa todos los que puedas y disfruta</p></a
+          >
+        </article>
       </section>
       <!-- Fin Section -->
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
     <footer class="footer">
-      <nav class="navbar container">
+      <nav class="nav">
+        <ul>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/acceso.html">Acceso</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li class="cart">
+            <div class="logo">
+              <a href="#">Genaro</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- <nav class="navbar container">
         <ul class="navbar__items">
           <li class="navbar__item">
             <a class="navbar__link" href="./pages/productos.html">Productos</a>
@@ -81,7 +129,7 @@
           </a>
         </picture>
       </nav>
-      <p class="footer__copy">@copy 2024 - Genaro ©</p>
+      <p class="footer__copy">@copy 2024 - Genaro ©</p> -->
     </footer>
     <!-- Fin Footer -->
   </body>
