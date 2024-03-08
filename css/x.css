@@ -1,0 +1,57 @@
+
+
+
+/*  */
+
+
+.collection {
+    border: 2px solid black;
+    margin: 30px;
+    /*  */
+    position: relative;
+    
+  }
+  
+  
+  .collection__link {
+    text-decoration: none;
+    /* gpt */
+    display: block;
+    /* position: relative; */
+  
+  }
+  
+  
+  
+  /* .collection__title,
+  .collection__text {
+    margin: 0; 
+  } */
+  
+  .collection__link::before {
+    content: ""; /* Agregamos contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posicionamos el pseudo-elemento de manera absoluta */
+    top: 0; /* Lo colocamos en la parte superior del padre .collection */
+    left: 0; /* Lo colocamos en la parte izquierda del padre .collection */
+    width: 100%; /* Aseguramos que ocupe todo el ancho del padre .collection */
+    height: 100%; /* Aseguramos que ocupe toda la altura del padre .collection */
+    z-index: -1; /* Lo colocamos detrás de los otros elementos dentro de .collection__link */
+  }
+  
+  .collection__cover {
+    display: block; /* Aseguramos que el elemento picture se comporte como un bloque */
+    width: 100%; /* Aseguramos que ocupe todo el ancho del elemento .collection__link */
+  }
+  .collection__content {
+   position: relative; /* Mantenemos la posición relativa del contenido para que no se vea afectada */
+  } 
+  .collection__title {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  
+  
+  

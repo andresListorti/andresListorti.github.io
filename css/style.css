@@ -43,17 +43,53 @@ main {
   align-content: space-between;
 }
 
+/* poner hombre y mujer por sobre la imagen  */
+
+
 .collection {
   border: 2px solid black;
   margin: 30px;
+  /*  */
+  width: 600px;
+  height: 900px;
+  position: relative;  
+  
 }
+
+.hombre {
+  
+  background-image: url("../resources/shoes-877939_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.mujer {
+
+  background-image: url("../resources/woman-2179062_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 .collection__link {
   text-decoration: none;
+
 }
 
-.collection__cover {
-}
+
+
+.collection__content {
+  font-size: 60px;
+  color: #fff;
+  margin: 50px 30px;
+
+} 
+
+
+
+/* ----------------------------- */
+
 
 footer {
   background-color: rgba(227, 220, 220, 0.9);
@@ -153,11 +189,9 @@ article p {
 }
 
 .redes {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .redes a {
   text-decoration: none;
@@ -180,3 +214,22 @@ article p {
   border-radius: 50%;
   box-shadow: 0 0 5px 5px #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
