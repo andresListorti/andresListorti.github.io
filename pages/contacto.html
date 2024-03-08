@@ -51,23 +51,38 @@
     <h2>Contacto</h2>
     <!-- Inicio Main  -->
     <main>
+      <form action="submit.js" method="post">
+        <label for="name">Nombre </label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Correo electrónico </label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="message">Mensaje: </label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+
       <!-- Inicio Section  -->
-      <section class="collection mujer">
+      <!-- <section class="collection mujer">
         <a class="collection__link" href="./mujer.html">
           <article class="collection__content">
             <h3 class="collection__title">Mujer</h3>
           </article>
         </a>
-      </section>
+      </section> -->
       <!-- Fin Section -->
       <!-- Inicio Section  -->
-      <section class="collection hombre">
+      <!-- <section class="collection hombre">
         <a class="collection__link" href="./hombre.html">
           <article class="collection__content">
             <h3 class="collection__title">Hombre</h3>
           </article>
         </a>
-      </section>
+      </section> -->
       <!-- Fin Section -->
     </main>
     <!-- Fin Main -->

@@ -31,11 +31,12 @@ h2 {
   text-align: center;
   /* line-height: 30px; */
 }
+
 main {
   padding-bottom: 40px;
   margin-bottom: 30px;
   width: 100%;
-  height: 100%;
+  height: 100%;  
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-flow: wrap;
@@ -43,42 +44,106 @@ main {
   align-content: space-between;
 }
 
-/* poner hombre y mujer por sobre la imagen  */
+main.login {
+  background-image: url("../resources/shoes-4672332_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  width: 100vw;
+  height: 100vh;
+  
+  
+}
+
+main.login a{
+  text-decoration: none;
+  color: beige;
+}
+
+.form {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(99, 86, 86, 0.9);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  
+  gap: 16px;
+
+}
+
+.form__input input {
+  
+  border: solid 2px black;
+  margin: 10px;
+  
+}
+
+
+
+/* */
+
+
+.submit{
+  border: none;
+  width: 100px;
+  height: 40px;
+  flex-shrink: 0;
+  background: rgb(24, 17, 17);
+  color: #fff;  
+  
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 2px solid var(--dark-solid);
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #1d84b5;
+
+  font-size: 22px;
+ 
+}
+
+
+
+
+
+/*  */
+
+
 
 
 .collection {
   border: 2px solid black;
   margin: 30px;
-  /*  */
   width: 600px;
   height: 900px;
-  position: relative;  
-  
+  position: relative;
 }
 
 .hombre {
-  
   background-image: url("../resources/shoes-877939_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
-.mujer {
 
+.mujer {
   background-image: url("../resources/woman-2179062_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
 .collection__link {
   text-decoration: none;
-  
-
 }
-
-
 
 .collection__content {
   font-size: 60px;
@@ -86,12 +151,7 @@ main {
   margin: 50px 30px;
   width: 100%;
   height: 100%;
-
-} 
-
-
-
-
+}
 
 .logo a {
   text-decoration: none;
@@ -136,7 +196,6 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
   position: absolute;
   z-index: -1;
 }
@@ -147,15 +206,12 @@ video {
   float: left;
   height: 30%;
   width: 30%;
-  /* font-size: 16px; */
-  /* border: 3px solid black; */
   position: relative;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   font-size: 25px;
-  
   z-index: 1;
   background-color: rgba(192, 155, 155, 0.5);
 }
@@ -206,10 +262,6 @@ article p {
   box-shadow: 0 0 5px 5px #fff;
 }
 
-
-
-
-
 footer {
   background-color: rgba(227, 220, 220, 0.9);
   height: 150px;
@@ -219,21 +271,40 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-  
 }
 
 
+/* Para Contacto */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 150px;
+}
+input[type="submit"] {
+  background-color: #baa55d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type="submit"]:hover {
+  background-color: #294482;
+}

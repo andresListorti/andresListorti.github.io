@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Genaro | Mujer</title>
+    <title>Genaro | Registro</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -23,8 +23,8 @@
         <ul>
           <li><a href="./productos.html">Colecciones</a></li>
           <li><a href="./acceso.html">Acceso</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li class="./cart">
+          <li><a href="#">Contacto</a></li>
+          <li class="cart">
             <a href="./carro.html"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
@@ -48,27 +48,78 @@
       </article>
     </section> -->
     <!-- Fin Hero  -->
-    <h2>Mujer</h2>
+    <h2>Crea tu cuenta</h2>
     <!-- Inicio Main  -->
     <main>
-      <!-- Inicio Section  -->
-      <section class="collection mujer">
-        <a class="collection__link" href="#">
-          <article class="collection__content">
-            <h3 class="collection__title">Mujer</h3>
-          </article>
-        </a>
+      <!-- Inicio Registro -->
+      <section class="register container">                
+        <form class="form" action="/auth/register" method="POST" enctype="application/x-www-form-urlencoded">
+          <label class="label col-1" for="nombre">Nombre</label>
+          <input
+            class="input__text col-2"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+          />
+          <br /><br />
+
+          <label class="label col-1" for="apellido">Apellido:</label>
+          <input
+            class="input__text col-2"
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+          />
+          <br /><br />
+
+          <label class="label col-1" for="email">Email:</label>
+          <input
+            class="input__text col-2"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <br /><br />
+
+          <label class="label col-1" for="pass">Contraseña:</label>
+          <input
+            class="input__text col-2"
+            type="password"
+            id="pass"
+            name="pass"
+            required
+          />
+          <br /><br />
+
+          <label class="label col-1" for="pass2">Repita Contraseña:</label>
+          <input
+            class="input__text col-2"
+            type="password"
+            id="pass2"
+            name="pass2"
+            required
+          />
+          <br /><br />
+
+          <input class="submit col-1" type="submit" value="Registrar" />
+          <label class="aceptoTerminos col-2">
+            <input
+              class="check"
+              type="checkbox"
+              id="aceptoTerminos"
+              name="aceptoTerminos"
+              required
+            />
+            Acepto <b>Términos y Condiciones</b>
+          </label>
+        </form>
       </section>
-      <!-- Fin Section -->
-      <!-- Inicio Section  -->
-      <section class="collection hombre">
-        <a class="collection__link" href="./hombre.html">
-          <article class="collection__content">
-            <h3 class="collection__title">Hombre</h3>
-          </article>
-        </a>
-      </section>
-      <!-- Fin Section -->
+
+      <!-- Fin Registro -->
+
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
