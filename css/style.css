@@ -11,7 +11,7 @@ html {
 }
 
 .logo {
-  font-size: 35px;
+  font-size: 45px;
 }
 
 header {
@@ -88,19 +88,7 @@ main {
 
 
 
-/* ----------------------------- */
 
-
-footer {
-  background-color: rgba(227, 220, 220, 0.9);
-  height: 150px;
-  font-size: 25px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-}
 
 .logo a {
   text-decoration: none;
@@ -145,7 +133,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+  
   position: absolute;
   z-index: -1;
 }
@@ -164,7 +152,7 @@ video {
   align-items: center;
   justify-content: center;
   font-size: 25px;
-
+  
   z-index: 1;
   background-color: rgba(192, 155, 155, 0.5);
 }
@@ -217,6 +205,19 @@ article p {
 
 
 
+
+
+footer {
+  background-color: rgba(227, 220, 220, 0.9);
+  height: 150px;
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  
+}
 
 
 
