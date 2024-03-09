@@ -36,7 +36,7 @@ main {
   padding-bottom: 40px;
   margin-bottom: 30px;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-flow: wrap;
@@ -44,17 +44,17 @@ main {
   align-content: space-between;
 }
 
-main.login {
+main.login,
+main.contacto,
+main.registro {
   background-image: url("../resources/shoes-4672332_1920.jpg");
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  
-  
 }
 
-main.login a{
+main.login a {
   text-decoration: none;
   color: beige;
 }
@@ -68,31 +68,36 @@ main.login a{
   justify-content: center;
   align-content: center;
   font-size: 30px;
-  
-  gap: 16px;
 
+  gap: 16px;
+}
+
+/* Registro */
+
+.formReg {
+  background-color: rgba(129, 95, 95, 0.9);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  gap: 8px;
+  padding: 8px;
+  height: 60vh;
 }
 
 .form__input input {
-  
   border: solid 2px black;
   margin: 10px;
-  
 }
 
-
-
-/* */
-
-
-.submit{
+.submit {
   border: none;
   width: 100px;
   height: 40px;
   flex-shrink: 0;
   background: rgb(24, 17, 17);
-  color: #fff;  
-  
+  color: #fff;
 }
 
 .check {
@@ -109,17 +114,9 @@ main.login a{
   color: #1d84b5;
 
   font-size: 22px;
- 
 }
 
-
-
-
-
 /*  */
-
-
-
 
 .collection {
   border: 2px solid black;
@@ -273,7 +270,6 @@ footer {
   text-align: center;
 }
 
-
 /* Para Contacto */
 
 .container {
@@ -285,7 +281,8 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
 }
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
