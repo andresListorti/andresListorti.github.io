@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Genaro | Hombre</title>
+    <title>Genaro | Mujer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -24,7 +24,7 @@
           <li><a href="../index.html#colecciones">Colecciones</a></li>
           <li><a href="./acceso.html">Acceso</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
-          <li class="cart">
+          <li class="./cart">
             <a href="./carro.html"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
@@ -35,26 +35,127 @@
     <!-- Fin Header -->    
     <h2>Hombre</h2>
     <!-- Inicio Main  -->
-    <main>
-      <!-- Inicio Section  -->
-      <section class="collection mujer">
-        <a class="collection__link" href="./mujer.html">
-          <article class="collection__content">
-            <h3 class="collection__title">Mujer</h3>
-          </article>
-        </a>
-      </section>
-      <!-- Fin Section -->
-      <!-- Inicio Section  -->
-      <section class="collection hombre">
-        <a class="collection__link" href="#">
-          <article class="collection__content">
-            <h3 class="collection__title">Hombre</h3>
-          </article>
-        </a>
-      </section>
-      <!-- Fin Section -->
-    </main>
+      <main class="">
+        <!-- Inicio Aside -->
+        <!-- <aside class="filternav">
+          <ul class="filternav__items">
+            <li class="filtebar__item">
+              <h2 class="filternav_item_title">BUSCAR</h2>
+              <label>
+                <input type="text" id="buscar" name="buscar" class="input_general input_big"
+                  placeholder="item o categoria" />
+              </label>
+            </li>
+            <li class="filtebar__item">
+              <h2 class="filternav_item_title">ORDENAR POR</h2>
+              <label>
+                <select id="ordenar" name="ordenar" class="input_general input_big">
+                  <option value="" selected>Mayor a menor</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </label>
+            </li>
+            <li class="filtebar__item">
+              <h2 class="filternav_item_title">PRECIO</h2>
+              <div class="item__range">
+                <label for="min">MIN</label>
+                <input id="min" name="min" class="input_general input_small" placeholder="0" />
+                <label for="">-</label>
+                <label for="max">MAX</label>
+                <input id="max" name="max" class="input_general input_small" placeholder="0" />
+              </div>
+              <br />
+            </li>
+            <li class="filtebar__item">
+              <h2 class="filternav_item_title">FILTRAR</h2>
+              <ul class="item_checkbox_items">
+                <li class="item_checkbox_item">
+                  <input type="checkbox" name="filtrar" id="filtrar" value="nuevos">
+                  <label for="filtrar">NUEVOS</label>
+                </li>
+                <li class="item_checkbox_item">
+                  <input type="checkbox" name="filtrar" id="filtrar" value="ofertas">
+                  <label for="filtrar">OFERTAS</label>
+                </li>
+                <li class="item_checkbox_item">
+                  <input type="checkbox" name="filtrar" id="filtrar" value="edicionEspecial">
+                  <label for="filtrar">EDICIÓN ESPECIAL</label>
+                </li>
+                <li class="item_checkbox_item">
+                  <input type="checkbox" name="filtrar" id="filtrar" value="favoritos">
+                  <label for="filtrar">FAVORITOS</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside> -->
+        <!-- Fin Aside -->
+        <!-- Inicio Producto -->
+        <section class="container__items">
+          <!-- Comienza item -->
+            <article class="card-item">
+              <a class="card-item__link" href="#">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Invierno 24</span>
+                  <img class="card-item__img--front"
+                    src="../resources/iaHombre.jpeg"
+                    alt="zapatoMujerModeloA150"
+                    width="640px"
+                    height="425px"
+                  />
+                  <!-- <img class="card-item__img--back"
+                    src=""
+                    alt=""
+                  /> -->
+                </picture>
+                <div class="card-item__content">                  
+                  <h4 class="card-item__name">A-150</h4>
+                  <p class="card-item__price">$ 50.900</p>
+                  <p class="card-item__promo">3 cuotas sin interes</p>
+                </div>
+              </a>
+            </article>      
+            <!-- Fin Item  -->
+          <!-- Comienza item -->
+            <article class="card-item oferta">
+              <a class="card-item__link" href="#">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Invierno 24</span>
+                  <img class="card-item__img--front"
+                    src="../resources/hombremoca.jpg"
+                    alt="zapatoMujerModeloB300"
+                    width="640px"
+                    height="425px"
+                  />
+                  <!-- <img class="card-item__img--back"
+                    src=""
+                    alt=""
+                  /> -->
+                </picture>
+                <div class="card-item__content">                  
+                  <h4 class="card-item__name">B-300</h4>
+                  <p class="card-item__price">$ 50.900</p>
+                  <p class="card-item__promo">3 cuotas sin interes</p>
+                </div>
+              </a>
+            </article>      
+            <!-- Fin Item  -->
+        </section>
+        <!-- paginacion -->
+        <!-- <section class="paginate">
+          <button class="paginate__item"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="paginate__item">1</button>
+          <button class="paginate__item">2</button>
+          <button class="paginate__item">...</button>
+          <button class="paginate__item">9</button>
+          <button class="paginate__item">10</button>
+          <button class="paginate__item"><i class="fa-solid fa-angle-right"></i></button>
+        </section> -->
+        <!-- fin paginacion -->
+      </main>
+
     <!-- Fin Main -->
     <!-- Inicio Footer -->
     <footer class="footer">
