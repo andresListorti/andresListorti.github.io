@@ -454,3 +454,12 @@ input[type="submit"]:hover {
   width: 150px;
   height: auto;
 }
+
+.btn-container {
+  display: flex;
+}
+
+.btn-add,
+.btn-remove {
+  margin-right: 5px;
+}
