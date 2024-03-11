@@ -403,6 +403,54 @@ input[type="submit"]:hover {
 } */
 
 
+
+
 /* Cart */
 
+/* .main__cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
 
+.item {
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-pay {
+  background-color: #28a745;
+}
+
+.item img {
+  width: 150px;
+  height: auto;
+}

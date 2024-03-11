@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />  
   </head>
   <body>
     <!-- Inicio Header-->
@@ -33,92 +33,48 @@
     <!-- Fin Header -->
     <h2>Carrito de Compras</h2>
     <!-- Inicio Main -->
-    <main class="container">
-      <h1>CARRITO DE COMPRAS</h1>
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th>DETALLE DE PRODUCTO</th>
-              <th>CANTIDAD</th>
-              <th>TOTAL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="../resources/fashion-1284496_1280.jpg" alt="" height="100px"/>
-                <div class="">
-                  <h2 class="">Modelo T-650</h2>
-                  <p class="">Invierno 24</p>
-                  <p class="">precio unidad: $ 51.000,00</p>
-                </div>
-              </td>
-              <td>
-                <label for="min">
-                  <input id="min" name="min" class="" placeholder="0" value="2" />
-                </label>
-                <div class="">
-                  <button>+</button>
-                  <button>-</button>
-                </div>
-              </td>
-              <td>$ 102.000,00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>
-                <img src="../resources/fashion-1284496_1280.jpg" alt="" height="100px"/>
-                <div class="">
-                  <h2 class="">Modelo A-320</h2>
-                  <p class="">Invierno 24</p>
-                  <p class="">precio unidad: $ 51.000,00</p>
-                </div>
-              </td>
-              <td>
-                <label for="min">
-                  <input id="min" name="min" class="" placeholder="0" value="1" />
-                </label>
-                <div class="">
-                  <button>+</button>
-                  <button>-</button>
-                </div>
-              </td>
-              <td>$ 51.000,00</td>
-              <td><i class="fa-solid fa-trash"></i></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h1>RESUMEN</h1>
-        <div>
-          <table>
-            <tbody>
-              <tr>
-                <td>CANTIDAD DE ELEMENTOS</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>SUBTOTAL</td>
-                <td>$ 5.000,00</td>
-              </tr>
-              <tr>
-                <td>ENVIO</td>
-                <td>$ 0,00</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th>TOTAL</th>
-                <td>$ 5.000,00</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-        <button>IR A PAGAR</button>
-      </section>
+
+    <main class="main__cart">
+      <div class="item">
+        <img src="https://via.placeholder.com/50" alt="Producto 1">
+        <h2>Producto 1</h2>
+        <p>Descripción del producto 1.</p>
+        <p>Precio: $10.00</p>
+        <button class="btn btn-add">+</button>
+        <button class="btn btn-remove">-</button>
+      </div>
+      
+      <div class="item">
+        <img src="https://via.placeholder.com/50" alt="Producto 1">
+        <h2>Producto 2</h2>
+        <p>Descripción del producto 2.</p>
+        <p>Precio: $20.00</p>
+        <button class="btn btn-add">+</button>
+        <button class="btn btn-remove">-</button>
+      </div>
+      
+      <div class="item">
+        <img src="https://via.placeholder.com/50" alt="Producto 1">
+        <h2>Producto 3</h2>
+        <p>Descripción del producto 3.</p>
+        <p>Precio: $15.00</p>
+        <button class="btn btn-add">+</button>
+        <button class="btn btn-remove">-</button>
+      </div>
+
+      <div class="summary">
+        <h2>Resumen de Compra</h2>
+        <p>Subtotal: $45.00</p>        
+        <p>Envío: $5.00</p>
+        <p>Total: $50.00</p>
+        <button class="btn btn-pay btn-pay">Pagar</button>
+      </div>
     </main>
+
+
+
+
+
     <!-- Fin Main -->
     <!-- Inicio Footer -->
     <footer class="footer">
