@@ -463,16 +463,33 @@ input[type="submit"]:hover {
   margin-right: 5px;
 }
 
+.nav__burger {
+  display: none;  
+}
+
 
 /* Media Queries */
 
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
 
-  
+   .header {
+    justify-content: space-between;
+  } 
+
+  .nav__burger {
+   display: flex;
+  } 
+
+
+
+  .select__wrapper {
+     display: none; 
+    
+  }
 
   .nav {
-    visibility: hidden;
+    display: none;
   }
 
   .logo {
