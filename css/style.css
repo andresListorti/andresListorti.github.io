@@ -775,7 +775,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (min-width: 1619px) and (max-width: 1700px) {
+@media only screen and (min-width: 1619px) {
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
