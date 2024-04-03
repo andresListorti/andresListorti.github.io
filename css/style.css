@@ -179,6 +179,7 @@ article p {
   width: 50%;
   height: 100vh;
   background-color: rgba(99, 86, 86, 0.9);
+  color: #ccc;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -187,10 +188,13 @@ article p {
   gap: 16px;
 }
 
+.form h3 {
+  text-decoration: underline;
+}
+
 /* Registro */
 
-.formReg {
-  background-color: rgba(129, 95, 95, 0.9);
+.formReg {  
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -204,16 +208,23 @@ article p {
 .form__input input {
   border: solid 2px black;
   margin: 10px;
+  
+}
+
+.input__text {
+  width: auto;
 }
 
 .submit {
   border: none;
-  width: 100px;
-  height: 40px;
+  width: 300px;
+  height: 70px;
   flex-shrink: 0;
   background: rgb(24, 17, 17);
   color: #fff;
 }
+
+
 
 .check {
   width: 18px;
@@ -405,13 +416,22 @@ input[type="submit"]:hover {
 
 /* Cart */
 
-/* .main__cart {
+.main__cart {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
+  flex-direction: column wrap;
+}
+
+.summary {
+  display: flex;
+  
+}
+
+.summary > * {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40px;
+  
+}
 
 .item {
   margin-bottom: 10px;
@@ -582,6 +602,21 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+  .submit {
+    width: 30vw;
+  }
+  
+  .formReg {  
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px;
+    height: 100vh;
+  }
+
   footer {
     height: 100%;
   }
@@ -615,6 +650,25 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     font-size: 18px;
+  }
+
+  #form__ingreso {
+    width: 100%;
+  }
+
+  .submit {
+    width: 30vw;
+  }
+  
+  .formReg {  
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px;
+    height: 100vh;
   }
 }
 
@@ -672,6 +726,24 @@ input[type="submit"]:hover {
     justify-content: center;
     text-decoration: none;
   }
+  #form__ingreso {
+    width: 100%;
+  }
+
+  .submit {
+    width: 30vw;
+  }
+  
+  .formReg {  
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px;
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 1301px) and (max-width: 1618px) {
@@ -687,6 +759,25 @@ input[type="submit"]:hover {
     justify-content: center;
     font-size: 25px;
   }
+
+  #form__ingreso {
+    width: 100%;
+  }
+
+  .submit {
+    width: 30vw;
+  }
+  
+  .formReg {  
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px;
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 1619px) and (max-width: 1700px) {
@@ -701,5 +792,23 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     font-size: 28px;
+  }
+  #form__ingreso {
+    width: 100%;
+  }
+
+  .submit {
+    width: 30vw;
+  }
+  
+  .formReg {  
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    gap: 8px;
+    padding: 8px;
+    height: 100vh;
   }
 }
