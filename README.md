@@ -1,13 +1,14 @@
 Buenas Profe!
 
-Esta es la primera entrega para el Curso de Desarrollo Web en CODER de Andres Listorti
-Entiendo que no se requería este detalle, pero agregué gitHub y Deploy en netlify para su mejor corrección.
-El codigo deployado es el mismo que figura en esta carpeta.
+Esta es la segunda entrega para el Curso de Desarrollo Web en CODER de Andres Listorti
 
-- Wireframes de vistas escritorio y mobiles, todos juntos en un mismo .bmpr armados con balsamic, en carpeta wireframes.
-- Deployado [solo Front] en https://dongenaro.netlify.app/
-- Repositorio gitHub https://github.com/andresListorti/Genaro
+Las paginas responsive son: index.html, hombre.html y mujer.html
 
+Se ha implementado 
+En hombre.html y mujer.html, se ha implementado Grid System para armar separar el <aside> del <section> 
+
+- Deployado en https://andreslistorti.github.io/
+- Repositorio gitHub https://github.com/andresListorti/andresListorti.github.io
 
 Saludos!
 
