@@ -142,11 +142,11 @@ video {
   margin: 100px;
   padding: 30px 10px;
   float: left;
-  height: 30%;
+  height: 40%;
   width: 30%;
   position: relative;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
   font-size: 25px;
@@ -272,7 +272,7 @@ footer {
 
 /* Para Contacto */
 
-.container {
+/* .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -280,7 +280,7 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-}
+} */
 
 input[type="text"],
 textarea {
@@ -313,9 +313,10 @@ input[type="submit"]:hover {
 /* Mujer y Hombre */
 
 .container__items {
-  width: 90%;
+  margin-left: 20px;
+
+  /* width: 90%;
   height: 95%;
-  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -323,7 +324,11 @@ input[type="submit"]:hover {
   margin-top: 50px;
   display: flex;
   gap: 15px;
-  flex-flow: row wrap;
+  flex-flow: row wrap; */
+}
+
+.filtebar__item {
+  list-style: none;
 }
 
 /* Productos */
@@ -463,7 +468,6 @@ input[type="submit"]:hover {
 /* Media Queries */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
   .header {
     justify-content: space-between;
   }
@@ -481,15 +485,20 @@ input[type="submit"]:hover {
   }
 
   .logo {
-    /* display: none; */
     font-size: 90%;
   }
 
   .hombre,
   .mujer {
-    /* display: none; */
     font-size: 19px;
-    width: 280px;
+    width: 100%;
+  }
+
+  /* Para Pagina Mujer */
+  .container__items {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
 
   .collection__content {
@@ -499,11 +508,52 @@ input[type="submit"]:hover {
     justify-content: center;
   }
 
+  .orden {
+    margin-top: 15px;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+  }
+
+  .card-item,
+  .card-item__link {
+    width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .card-item__tag {
+    /* float: left; */
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #294482;
+    background-color: rgba(223, 207, 207, 0.5);
+    position: absolute;
+    right: left;
+  }
+
+  .card-item__img--front {
+    width: 100%;
+  }
+
   .hero {
-    position: relative;    
+    position: relative;
     width: 100%;
     height: 100vh;
-    border-style: none;    
+    border-style: none;
   }
 
   video {
@@ -513,8 +563,6 @@ input[type="submit"]:hover {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    
-    
   }
 
   .hero__content {
@@ -528,31 +576,25 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    
-    
   }
 
-  .hero__link {
-  }
-
-  .collection__content {
-    /* margin: esto hubo que cambiar;  */
+  footer {
+    height: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width:1024px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .nav {
     display: none;
   }
 
   .nav__burger {
     display: flex;
-  }  
+  }
 
-  .nav__burger .fa-bars{
+  .nav__burger .fa-bars {
     font-size: 2em;
-  }  
+  }
 
   .select__wrapper {
     display: none;
@@ -570,12 +612,9 @@ input[type="submit"]:hover {
     justify-content: center;
     font-size: 18px;
   }
-
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
-
-
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
@@ -589,11 +628,49 @@ input[type="submit"]:hover {
     font-size: 20px;
   }
 
+  /* Para Pagina Mujer */
+  .container__items {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection__content {
+    font-size: 36px;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .orden {
+    margin-top: 15px;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+  }
+
+  .card-item,
+  .card-item__link {
+    width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: center;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (min-width: 1301px) and (max-width: 1618px) {
-
-
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
@@ -606,12 +683,9 @@ input[type="submit"]:hover {
     justify-content: center;
     font-size: 25px;
   }
-
 }
 
 @media only screen and (min-width: 1619px) and (max-width: 1700px) {
-
-
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
@@ -623,7 +697,5 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    
   }
-
 }
