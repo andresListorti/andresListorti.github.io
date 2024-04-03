@@ -37,7 +37,22 @@
     <h2>Inicio de sesión</h2>
     <main class="login">
       <!-- Inicio Login -->
-      <div class="form">
+      <form action="/auth/login" method="POST" enctype="application/x-www-form-urlencoded" target="_self" class="form">
+        <div class="mb-3  form__input">
+          <label for="exampleInputEmail1" class="form-label">Email </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </form>
+      <!-- <div class="form">
         <form action="/auth/login" method="POST" enctype="application/x-www-form-urlencoded" target="_self">
           <div class="form__input">
             <label for="email">Email </label>
@@ -52,11 +67,10 @@
             <label>
               <input class="check" type="checkbox" id="recordarme" name="recordarme"/>Recordarme
             </label>
-          </div>  
-          <!-- <a class="link" href="#">Olvidé mi contraseña</a> -->
+          </div>            
           <a class="link" href="./registro.html">Crear cuenta</a>
         </form>
-      </div>
+      </div> -->
         <!-- Fin Login -->
     </main>
     <!-- Fin Main -->
