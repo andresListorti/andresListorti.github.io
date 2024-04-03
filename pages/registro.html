@@ -11,7 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -20,45 +25,47 @@
     <header>
       <div class="logo">
         <a href="../index.html">Genaro</a>
-      </div>      
+      </div>
       <nav class="nav">
         <ul>
           <li><a href="../index.html#colecciones">Colecciones</a></li>
           <li><a href="./acceso.html">Acceso</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
           <li class="cart">
-            <a href="./carro.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <a href="./carro.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
       </nav>
       <nav class="nav__burger">
-        <i class="fa-solid fa-bars"></i>      
+        <i class="fa-solid fa-bars"></i>
         <div class="select__wrapper">
           <div id="nav-select" class="nav-links">
-            <section><a href="../index.html#colecciones">Colecciones</a></section>
+            <section>
+              <a href="../index.html#colecciones">Colecciones</a>
+            </section>
             <section><a href="./acceso.html">Acceso</a></section>
             <section><a href="./contacto.html">Contacto</a></section>
             <section class="cart">
-              <a href="./carro.html"
-              >Carrito</a>
-              </section>
-            </div>
+              <a href="./carro.html">Carrito</a>
+            </section>
           </div>
+        </div>
       </nav>
     </header>
-    <!-- Fin Header -->    
+    <!-- Fin Header -->
     <h2>Crea tu cuenta</h2>
     <!-- Inicio Main  -->
     <main class="registro">
       <!-- Inicio Registro -->
       <div class="form">
-
         <div class="container">
-  
-          <section class="register">                
-            <form class="formReg" action="/auth/register" method="POST" enctype="application/x-www-form-urlencoded">
+          <section class="register">
+            <form
+              class="formReg"
+              action="/auth/register"
+              method="POST"
+              enctype="application/x-www-form-urlencoded"
+            >
               <label class="label col-1" for="nombre">Nombre</label>
               <input
                 class="input__text col-2"
@@ -67,8 +74,7 @@
                 name="nombre"
                 required
               />
-              
-    
+
               <label class="label col-1" for="apellido">Apellido:</label>
               <input
                 class="input__text col-2"
@@ -77,8 +83,7 @@
                 name="apellido"
                 required
               />
-              
-    
+
               <label class="label col-1" for="email">Email:</label>
               <input
                 class="input__text col-2"
@@ -87,8 +92,7 @@
                 name="email"
                 required
               />
-              
-    
+
               <label class="label col-1" for="pass">Contraseña:</label>
               <input
                 class="input__text col-2"
@@ -97,8 +101,7 @@
                 name="pass"
                 required
               />
-              
-    
+
               <label class="label col-1" for="pass2">Repita Contraseña:</label>
               <input
                 class="input__text col-2"
@@ -107,8 +110,7 @@
                 name="pass2"
                 required
               />
-              
-              
+
               <input class="submit reg col-1" type="submit" value="Registrar" />
               <label class="aceptoTerminos">
                 <input
@@ -117,7 +119,8 @@
                   id="aceptoTerminos"
                   name="aceptoTerminos"
                   required
-                /> Acepto Términos y Condiciones
+                />
+                Acepto Términos y Condiciones
               </label>
             </form>
           </section>
@@ -125,7 +128,6 @@
       </div>
 
       <!-- Fin Registro -->
-
     </main>
     <!-- Fin Main -->
     <!-- Inicio Footer -->
@@ -145,7 +147,10 @@
       <a href="#" class="subir"><i class="fa-solid fa-up-long"></i></a>
     </footer>
     <!-- Fin Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

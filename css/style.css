@@ -194,7 +194,7 @@ article p {
 
 /* Registro */
 
-.formReg {  
+.formReg {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -208,7 +208,6 @@ article p {
 .form__input input {
   border: solid 2px black;
   margin: 10px;
-  
 }
 
 .input__text {
@@ -223,8 +222,6 @@ article p {
   background: rgb(24, 17, 17);
   color: #fff;
 }
-
-
 
 .check {
   width: 18px;
@@ -423,14 +420,12 @@ input[type="submit"]:hover {
 
 .summary {
   display: flex;
-  
 }
 
 .summary > * {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 40px;
-  
 }
 
 .item {
@@ -605,8 +600,8 @@ input[type="submit"]:hover {
   .submit {
     width: 30vw;
   }
-  
-  .formReg {  
+
+  .formReg {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -659,8 +654,8 @@ input[type="submit"]:hover {
   .submit {
     width: 30vw;
   }
-  
-  .formReg {  
+
+  .formReg {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -733,8 +728,8 @@ input[type="submit"]:hover {
   .submit {
     width: 30vw;
   }
-  
-  .formReg {  
+
+  .formReg {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -767,8 +762,8 @@ input[type="submit"]:hover {
   .submit {
     width: 30vw;
   }
-  
-  .formReg {  
+
+  .formReg {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -800,8 +795,8 @@ input[type="submit"]:hover {
   .submit {
     width: 30vw;
   }
-  
-  .formReg {  
+
+  .formReg {
     display: flex;
     flex-flow: column;
     justify-content: center;
