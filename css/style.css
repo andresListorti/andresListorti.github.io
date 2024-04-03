@@ -578,6 +578,10 @@ input[type="submit"]:hover {
     font-size: 18px;
   }
 
+  #form__ingreso {
+    width: 100%;
+  }
+
   footer {
     height: 100%;
   }
