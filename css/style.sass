@@ -1,0 +1,701 @@
+*
+    margin: 0
+    padding: 0
+    font-family: Georgia, "Times New Roman", Times, serif
+
+html
+    scroll-behavior: smooth
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif
+
+.logo
+    font-size: 45px
+
+header
+    background-color: rgba(227, 220, 220, 0.9)
+    height: 90px
+    font-size: 25px
+    padding: 20px
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+h2
+    font-size: 30px
+    margin: 30px
+    height: 30px
+    text-align: center
+    /* line-height: 30px */
+
+main
+    padding-bottom: 40px
+    margin-bottom: 30px
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.9)
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    align-content: space-between
+
+main.login,
+main.contacto,
+main.registro
+    background-image: url("../resources/shoes-4672332_1920.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100vw
+    height: 100vh
+
+main.login a
+    text-decoration: none
+    color: beige
+
+.collection
+    border: 2px solid black
+    margin: 30px
+    width: 600px
+    height: 900px
+    position: relative
+
+.hombre
+    background-image: url("../resources/shoes-877939_1920.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+
+.mujer
+    background-image: url("../resources/woman-2179062_1920.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+
+.collection__link
+    text-decoration: none
+
+.collection__content
+    font-size: 60px
+    color: #fff
+    margin: 50px 30px
+    width: 100%
+    height: 100%
+
+.logo a
+    text-decoration: none
+    text-transform: uppercase
+    color: black
+    font-weight: bold
+
+nav
+    display: flex
+    align-content: space-evenly
+
+nav ul li 
+    list-style: none
+    display: inline-block
+    margin: 20px
+
+nav a 
+    text-decoration: none
+    color: black
+    font-weight: bold
+
+.cart
+    margin-left: 30px
+    padding-left: 30px
+
+.hero
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 70vh
+    border-style: none
+
+video
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    z-index: -1
+
+.hero__content
+    margin: 100px
+    padding: 30px 10px
+    float: left
+    height: 40%
+    width: 30%
+    position: relative
+    display: flex
+    flex-flow: wrap
+    align-items: center
+    justify-content: center
+    font-size: 25px
+    z-index: 1
+    background-color: rgba(192, 155, 155, 0.5)
+
+.hero__link
+    margin-top: 20px
+    text-decoration: none
+    color: blanchedalmond
+
+.hero__link:hover
+    color: #d5c2c2
+
+.nav a:hover
+    color: #c87474
+
+article p 
+    margin: 10px
+    font-weight: bold
+
+  /*  */
+
+.form
+    width: 50%
+    height: 100vh
+    background-color: rgba(99, 86, 86, 0.9)
+    color: #ccc
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-content: center
+    font-size: 30px
+    gap: 16px
+
+.form h3
+    text-decoration: underline
+
+  /* Registro */
+
+.formReg
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-content: center
+    font-size: 30px
+    gap: 8px
+    padding: 8px
+    height: 60vh
+
+.form__input input
+    border: solid 2px black
+    margin: 10px
+
+.input__text
+    width: auto
+
+.submit
+    border: none
+    width: 300px
+    height: 70px
+    flex-shrink: 0
+    background: rgb(24, 17, 17)
+    color: #fff
+
+.check
+    width: 18px
+    height: 18px
+    flex-shrink: 0
+    border-radius: 3px
+    border: 2px solid var(--dark-solid)
+    margin-right: 8px
+    margin-bottom: 10px
+
+.link
+    color: #1d84b5
+    font-size: 22px
+
+  /* Footer */
+
+.redes
+    display: flex
+    align-content: center
+    justify-content: center
+
+.redes a
+    text-decoration: none
+    color: black
+    font-size: 50px
+    letter-spacing: 15px
+
+.subir
+    background-color: black
+    color: #fff
+    height: 40px
+    width: 40px
+    position: fixed
+    right: 40px
+    bottom: 40px
+    font-size: 25px
+    text-align: center
+    line-height: 40px
+    border-radius: 50%
+    box-shadow: 0 0 5px 5px #fff
+
+footer
+    background-color: rgba(227, 220, 220, 0.9)
+    height: 150px
+    font-size: 25px
+    padding: 20px
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    text-align: center
+
+  /* Para Contacto */
+
+  /* .container 
+   max-width: 600px
+   margin: 0 auto
+   padding: 20px
+   background-color: #fff
+   border-radius: 8px
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+   margin-top: 50px
+   */
+
+input[type="text"],
+textarea
+    width: 100%
+    padding: 10px
+    margin-bottom: 15px
+    border: 1px solid #ccc
+    border-radius: 4px
+    box-sizing: border-box
+
+textarea
+    height: 150px
+
+input[type="submit"]
+    background-color: #baa55d
+    color: white
+    padding: 12px 20px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    float: right
+
+input[type="submit"]:hover
+    background-color: #294482
+
+  /* Mujer y Hombre */
+
+.container__items
+    margin-left: 20px
+
+    /* width: 90%
+    height: 95%
+    padding: 20px
+    background-color: #fff
+    border-radius: 8px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    margin-top: 50px
+    display: flex
+    gap: 15px
+    flex-flow: row wrap */
+
+.filtebar__item
+    list-style: none
+
+  /* Productos */
+
+.card-item
+    width: 700px
+    margin: 0 auto
+    padding: 20px
+    background-color: #fff
+    border-radius: 8px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    margin-top: 50px
+    display: flex
+    align-items: flex-start
+
+.card-item,
+.card-item__link
+    margin: 0
+    padding: 20px
+    background-color: #fff
+    border-radius: 8px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    margin-top: 50px
+    display: flex
+    flex-flow: column
+    align-items: left
+    justify-content: center
+    text-decoration: none
+
+.card-item__tag
+    /* float: left */
+    font-size: 14px
+    text-transform: uppercase
+    color: #294482
+    background-color: rgba(223, 207, 207, 0.5)
+    position: absolute
+    right: left
+
+  /* paginacion */
+.paginate
+    display: flex
+    flex-direction: row
+    gap: 8px
+    font-size: 16px
+    justify-content: center
+
+.paginate__item
+    appearance: none
+    width: 36px
+    height: 36px
+    font-weight: 900
+    background-color: blueviolet
+    border: 1px solid black
+    border-radius: 4px
+
+.paginate__item:nth-child(1)
+    background-color: blue
+    border: none
+
+.paginate__item i
+    /* transform: translate(0, -.8em) scale(0.3) */
+
+  /* .item__selected 
+   border: 1px solid var(--primary-900)
+   color: red
+   */
+
+  /* Cart */
+
+.main__cart
+    display: flex
+    flex-direction: column wrap
+
+.summary
+    display: flex
+
+.summary > *
+    display: grid
+    grid-template-columns: 1fr 1fr
+    height: 40px
+
+.item
+    margin-bottom: 10px
+    border: 1px solid #ccc
+    padding: 10px
+    width: 80%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.item:last-child
+    margin-bottom: 0
+
+.summary
+    margin-top: 20px
+    text-align: center
+
+.btn
+    margin-top: 10px
+    padding: 8px 20px
+    font-size: 16px
+    background-color: #007bff
+    color: #fff
+    border: none
+    cursor: pointer
+    border-radius: 5px
+
+.btn-pay
+    background-color: #28a745
+
+.item img
+    width: 150px
+    height: auto
+
+.btn-container
+    display: flex
+
+.btn-add,
+.btn-remove
+    margin-right: 5px
+
+.nav__burger
+    display: none
+
+  /* Media Queries */
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+
+    .header
+        justify-content: space-between
+
+    .nav__burger
+        display: flex
+
+    .select__wrapper
+        display: none
+
+    .nav
+        display: none
+
+    .logo
+        font-size: 90%
+
+    .hombre,
+    .mujer
+        font-size: 19px
+        width: 100%
+
+    /* Para Pagina Mujer */
+    .container__items
+        width: 100vw
+        display: flex
+        flex-direction: column
+
+    .collection__content
+        font-size: 36px
+        margin: 20px 30px
+        display: flex
+        justify-content: center
+
+    .orden
+        margin-top: 15px
+
+    .card-item
+        width: 100%
+        padding: 3px
+        background-color: #fff
+        border-radius: 8px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        margin-top: 5px
+
+    .card-item,
+    .card-item__link
+        width: 100%
+        padding: 3px
+        background-color: #fff
+        border-radius: 8px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        display: flex
+        flex-flow: column
+        align-items: left
+        justify-content: center
+        text-decoration: none
+
+    .card-item__tag
+      /* float: left */
+        font-size: 14px
+        text-transform: uppercase
+        color: #294482
+        background-color: rgba(223, 207, 207, 0.5)
+        position: absolute
+        right: left
+
+    .card-item__img--front
+        width: 100%
+
+    .hero
+        position: relative
+        width: 100%
+        height: 100vh
+        border-style: none
+
+    video
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+
+    .hero__content
+        margin: 100px
+        padding: 30px 10px
+        height: 50%
+        width: 60%
+        position: relative
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        justify-content: center
+        font-size: 18px
+
+    #form__ingreso
+        width: 100%
+
+    .submit
+        width: 30vw
+
+    .formReg
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        font-size: 16px
+        gap: 8px
+        padding: 8px
+        height: 100vh
+
+    footer
+        height: 100%
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+    .nav
+        display: none
+
+    .nav__burger
+        display: flex
+
+    .nav__burger .fa-bars
+        font-size: 2em
+
+    .select__wrapper
+        display: none
+
+    .hero__content
+        margin: 100px
+        padding: 30px 10px
+        height: 50%
+        width: 40%
+        position: relative
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        justify-content: center
+        font-size: 18px
+
+    #form__ingreso
+        width: 100%
+
+    .submit
+        width: 30vw
+
+    .formReg
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        font-size: 16px
+        gap: 8px
+        padding: 8px
+        height: 100vh
+
+@media only screen and (min-width: 1025px) and (max-width: 1300px)
+    .hero__content
+        margin: 100px
+        padding: 30px 10px
+        height: 50%
+        width: 40%
+        position: relative
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        justify-content: center
+        font-size: 20px
+
+    /* Para Pagina Mujer */
+    .container__items
+        width: 100vw
+        display: flex
+        flex-direction: column
+
+    .collection__content
+        font-size: 36px
+        margin: 20px 30px
+        display: flex
+        justify-content: center
+
+    .orden
+        margin-top: 15px
+
+    .card-item
+        width: 100%
+        padding: 3px
+        background-color: #fff
+        border-radius: 8px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        margin-top: 5px
+
+    .card-item,
+    .card-item__link
+        width: 100%
+        padding: 3px
+        background-color: #fff
+        border-radius: 8px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        display: flex
+        flex-flow: column
+        align-items: left
+        justify-content: center
+        text-decoration: none
+
+    #form__ingreso
+        width: 100%
+
+    .submit
+        width: 30vw
+
+    .formReg
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        font-size: 16px
+        gap: 8px
+        padding: 8px
+        height: 100vh
+
+@media only screen and (min-width: 1301px) and (max-width: 1618px)
+    .hero__content
+        margin: 100px
+        padding: 30px 10px
+        height: 50%
+        width: 40%
+        position: relative
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        justify-content: center
+        font-size: 25px
+
+    #form__ingreso
+        width: 100%
+
+    .submit
+        width: 30vw
+
+    .formReg
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        font-size: 16px
+        gap: 8px
+        padding: 8px
+        height: 100vh
+
+@media only screen and (min-width: 1619px)
+    .hero__content
+        margin: 100px
+        padding: 30px 10px
+        height: 50%
+        width: 40%
+        position: relative
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        justify-content: center
+        font-size: 28px
+
+    #form__ingreso
+        width: 100%
+
+    .submit
+        width: 30vw
+
+    .formReg
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-content: center
+        font-size: 16px
+        gap: 8px
+        padding: 8px
+        height: 100vh
