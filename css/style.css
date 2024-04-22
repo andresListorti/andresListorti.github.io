@@ -138,7 +138,7 @@ nav ul li {
   margin: 100px;
   padding: 30px 10px;
   float: left;
-  width: 30%;
+  width: 35%;
   position: relative;
   display: flex;
   flex-flow: wrap;
@@ -215,7 +215,7 @@ nav ul li {
   height: 18px;
   flex-shrink: 0;
   border-radius: 3px;
-  border: 2px solid var(--dark-solid);
+  border: 2px solid black;
   margin-right: 8px;
   margin-bottom: 10px;
 }
@@ -437,6 +437,9 @@ input[type=submit]:hover {
   .header {
     justify-content: space-between;
   }
+  .header .logo {
+    font-size: 90%;
+  }
   .nav__burger {
     display: flex;
   }
@@ -445,9 +448,6 @@ input[type=submit]:hover {
   }
   .nav {
     display: none;
-  }
-  .logo {
-    font-size: 90%;
   }
   .hombre,
   .mujer {
@@ -517,10 +517,9 @@ input[type=submit]:hover {
     position: absolute;
   }
   .hero__content {
-    margin: 100px;
-    padding: 30px 10px;
-    height: 50%;
-    width: 60%;
+    margin: 10px;
+    padding: 5px 5px;
+    width: 40% !important;
     position: relative;
     display: flex;
     flex-flow: wrap;
@@ -551,6 +550,86 @@ input[type=submit]:hover {
   }
   footer {
     height: 100%;
+  }
+  /* Cart */
+  .main__cart {
+    display: flex;
+    flex-direction: column wrap;
+  }
+  .summary {
+    display: flex;
+  }
+  .summary > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40px;
+  }
+  .item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+  }
+  .item img {
+    display: none;
+  }
+  .item h2 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 80%;
+  }
+  .item p {
+    margin-left: 2px;
+    font-size: 80%;
+    margin: 5px;
+  }
+  .item:last-child {
+    margin-bottom: 10px;
+  }
+  .summary {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .summary h2 {
+    margin-left: 0;
+    font-size: 80%;
+  }
+  .summary p {
+    margin-left: 2px;
+    font-size: 80%;
+    margin: 5px;
+  }
+  .summary .btns {
+    font-size: 80%;
+  }
+  .btn {
+    margin-top: 3px;
+    padding: 2px 10px;
+    font-size: 9px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .btn-pay {
+    background-color: #28a745;
+  }
+  .btn-remove-item {
+    transform: scale(0.8);
+  }
+  .btn-container {
+    display: flex;
+  }
+  .btn-add,
+  .btn-remove {
+    margin-right: 5px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
