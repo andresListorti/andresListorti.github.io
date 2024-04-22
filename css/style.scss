@@ -1,7 +1,15 @@
+$fuentePrincipal: Georgia, "Times New Roman", Times, serif;
+$colorHeader: rgba(227, 220, 220, 0.9);
+$tamanioLogo: 45px;
+$backGeneral: url("../resources/shoes-4672332_1920.jpg");
+$backMain: rgba(255, 255, 255, 0.9);
+$imagenHombre: url("../resources/shoes-877939_1920.jpg");
+$imagenMujer: url("../resources/woman-2179062_1920.jpg");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: $fuentePrincipal;
 }
 
 html {
@@ -9,25 +17,27 @@ html {
 }
 
 header {
-  background-color: rgba(227, 220, 220, 0.9);
+  background-color: $colorHeader;
   height: 90px;
   font-size: 25px;
   padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-header .logo {
-  font-size: 45px;
-}
-header .logo a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
-}
-header .nav a:hover {
-  color: #c87474;
+  .logo {
+    font-size: $tamanioLogo;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .nav {
+    a:hover {
+      color: #c87474;
+    }
+  }
 }
 
 h2 {
@@ -43,7 +53,7 @@ main {
   margin-bottom: 30px;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: $backMain;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -53,16 +63,18 @@ main {
 main.login,
 main.contacto,
 main.registro {
-  background-image: url("../resources/shoes-4672332_1920.jpg");
+  background-image: $backGeneral;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 
-main.login a {
-  text-decoration: none;
-  color: beige;
+main.login {
+  a {
+    text-decoration: none;
+    color: beige;
+  }
 }
 
 .collection {
@@ -74,13 +86,13 @@ main.login a {
 }
 
 .hombre {
-  background-image: url("../resources/shoes-877939_1920.jpg");
+  background-image: $imagenHombre;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .mujer {
-  background-image: url("../resources/woman-2179062_1920.jpg");
+  background-image: $imagenMujer;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -100,16 +112,18 @@ main.login a {
 nav {
   display: flex;
   align-content: space-evenly;
-}
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 20px;
+    }
+  }
 }
 
 .cart {
@@ -123,44 +137,46 @@ nav ul li {
   width: 100%;
   height: 70vh;
   border-style: none;
-}
-.hero video {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-.hero .hero__content {
-  margin: 100px;
-  padding: 30px 10px;
-  float: left;
-  width: 30%;
-  position: relative;
-  display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  z-index: 1;
-  background-color: rgba(192, 155, 155, 0.5);
-}
-.hero .hero__link {
-  margin-top: 5px;
-  text-decoration: none;
-  color: blanchedalmond;
-}
-.hero .hero__link:hover {
-  color: #d5c2c2;
-}
-.hero article p {
-  margin: 10px;
-  font-weight: bold;
+  video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
+  .hero__content {
+    margin: 100px;
+    padding: 30px 10px;
+    float: left;
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    z-index: 1;
+    background-color: rgba(192, 155, 155, 0.5);
+  }
+  .hero__link {
+    margin-top: 5px;
+    text-decoration: none;
+    color: blanchedalmond;
+  }
+  .hero__link:hover {
+    color: #d5c2c2;
+  }
+  article {
+    p {
+      margin: 10px;
+      font-weight: bold;
+    }
+  }
 }
 
+// Formularios
 .form {
   width: 50%;
   height: 100vh;
@@ -172,12 +188,13 @@ nav ul li {
   align-content: center;
   font-size: 30px;
   gap: 16px;
-}
-.form h3 {
-  text-decoration: underline;
+  h3 {
+    text-decoration: underline;
+  }
 }
 
 /* Registro */
+
 .formReg {
   display: flex;
   flex-flow: column;
@@ -187,14 +204,16 @@ nav ul li {
   gap: 8px;
   padding: 8px;
   height: 60vh;
-}
-.formReg label {
-  font-size: 30px;
+  label {
+    font-size: 30px;
+  }
 }
 
-.form__input input {
-  border: solid 2px black;
-  margin: 10px;
+.form__input {
+  input {
+    border: solid 2px black;
+    margin: 10px;
+  }
 }
 
 .input__text {
@@ -226,6 +245,7 @@ nav ul li {
 }
 
 /* Footer */
+
 footer {
   background-color: rgba(227, 220, 220, 0.9);
   height: 150px;
@@ -235,17 +255,17 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-}
-footer .redes {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-footer .redes a {
-  text-decoration: none;
-  color: black;
-  font-size: 50px;
-  letter-spacing: 15px;
+  .redes {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 50px;
+      letter-spacing: 15px;
+    }
+  }
 }
 
 .subir {
@@ -264,7 +284,8 @@ footer .redes a {
 }
 
 /* Para Contacto */
-input[type=text],
+
+input[type="text"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -278,7 +299,7 @@ textarea {
   height: 150px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #baa55d;
   color: white;
   padding: 12px 20px;
@@ -288,11 +309,12 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #294482;
 }
 
 /* Mujer y Hombre */
+
 .container__items {
   margin-left: 20px;
 }
@@ -302,6 +324,7 @@ input[type=submit]:hover {
 }
 
 /* Productos */
+
 .card-item {
   width: 700px;
   margin: 0 auto;
@@ -348,9 +371,7 @@ input[type=submit]:hover {
 }
 
 .paginate__item {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 36px;
   height: 36px;
   font-weight: 900;
@@ -365,6 +386,7 @@ input[type=submit]:hover {
 }
 
 /* Cart */
+
 .main__cart {
   display: flex;
   flex-direction: column wrap;
@@ -414,9 +436,11 @@ input[type=submit]:hover {
   background-color: #28a745;
 }
 
-.item img {
-  width: 150px;
-  height: auto;
+.item {
+  img {
+    width: 150px;
+    height: auto;
+  }
 }
 
 .btn-container {
@@ -433,42 +457,52 @@ input[type=submit]:hover {
 }
 
 /* Media Queries */
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     justify-content: space-between;
   }
+
   .nav__burger {
     display: flex;
   }
+
   .select__wrapper {
     display: none;
   }
+
   .nav {
     display: none;
   }
+
   .logo {
     font-size: 90%;
   }
+
   .hombre,
   .mujer {
     font-size: 19px;
     width: 100%;
   }
+
   /* Para Pagina Mujer */
   .container__items {
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
+
   .collection__content {
     font-size: 36px;
     margin: 20px 30px;
     display: flex;
     justify-content: center;
   }
+
   .orden {
     margin-top: 15px;
   }
+
   .card-item {
     width: 100%;
     padding: 3px;
@@ -477,6 +511,7 @@ input[type=submit]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 5px;
   }
+
   .card-item,
   .card-item__link {
     width: 100%;
@@ -490,6 +525,7 @@ input[type=submit]:hover {
     justify-content: center;
     text-decoration: none;
   }
+
   .card-item__tag {
     font-size: 14px;
     text-transform: uppercase;
@@ -498,24 +534,27 @@ input[type=submit]:hover {
     position: absolute;
     right: left;
   }
+
   .card-item__img--front {
     width: 100%;
   }
+
   .hero {
     position: relative;
     width: 100%;
     height: 100vh;
     border-style: none;
   }
+
   video {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     position: absolute;
   }
+
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
@@ -528,18 +567,22 @@ input[type=submit]:hover {
     justify-content: center;
     font-size: 18px;
   }
+
   #form__ingreso {
     width: 100%;
   }
+
   .submit {
     width: 30vw;
   }
+
   .register {
     display: inline-block;
     flex-flow: column;
     justify-content: center;
     align-content: center;
   }
+
   .formReg {
     display: flex;
     flex-flow: column;
@@ -548,24 +591,33 @@ input[type=submit]:hover {
     font-size: 16px;
     gap: 8px;
     padding: 18px;
+    //height: 100vh;
   }
+
   footer {
     height: 100%;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .nav {
     display: none;
   }
+
   .nav__burger {
     display: flex;
   }
-  .nav__burger .fa-bars {
-    font-size: 2em;
+
+  .nav__burger {
+    .fa-bars {
+      font-size: 2em;
+    }
   }
+
   .select__wrapper {
     display: none;
   }
+
   .hero__content {
     margin: 100px;
     padding: 30px 10px;
@@ -578,12 +630,15 @@ input[type=submit]:hover {
     justify-content: center;
     font-size: 18px;
   }
+
   #form__ingreso {
     width: 100%;
   }
+
   .submit {
     width: 30vw;
   }
+
   .formReg {
     display: flex;
     flex-flow: column;
@@ -595,6 +650,7 @@ input[type=submit]:hover {
     height: 100vh;
   }
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
   .hero__content {
     margin: 100px;
@@ -608,21 +664,25 @@ input[type=submit]:hover {
     justify-content: center;
     font-size: 20px;
   }
+
   /* Para Pagina Mujer */
   .container__items {
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
+
   .collection__content {
     font-size: 36px;
     margin: 20px 30px;
     display: flex;
     justify-content: center;
   }
+
   .orden {
     margin-top: 15px;
   }
+
   .card-item {
     width: 100%;
     padding: 3px;
@@ -631,6 +691,7 @@ input[type=submit]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 5px;
   }
+
   .card-item,
   .card-item__link {
     width: 100%;
@@ -647,9 +708,11 @@ input[type=submit]:hover {
   #form__ingreso {
     width: 100%;
   }
+
   .submit {
     width: 30vw;
   }
+
   .formReg {
     display: flex;
     flex-flow: column;
@@ -661,6 +724,7 @@ input[type=submit]:hover {
     height: 100vh;
   }
 }
+
 @media only screen and (min-width: 1301px) and (max-width: 1618px) {
   .hero__content {
     margin: 100px;
@@ -674,12 +738,15 @@ input[type=submit]:hover {
     justify-content: center;
     font-size: 25px;
   }
+
   #form__ingreso {
     width: 100%;
   }
+
   .submit {
     width: 30vw;
   }
+
   .formReg {
     display: flex;
     flex-flow: column;
@@ -690,4 +757,37 @@ input[type=submit]:hover {
     padding: 8px;
     height: 100vh;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+// @media only screen and (min-width: 1619px) {
+//   .hero__content {
+//     margin: 100px;
+//     padding: 30px 10px;
+//     height: 50%;
+//     width: 40%;
+//     position: relative;
+//     display: flex;
+//     flex-flow: wrap;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 28px;
+//   }
+//   #form__ingreso {
+//     width: 100%;
+//   }
+
+//   .submit {
+//     width: 30vw;
+//   }
+
+//   .formReg {
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: center;
+//     align-content: center;
+//     font-size: 16px;
+//     gap: 8px;
+//     padding: 8px;
+//     height: 100vh;
+//   }
+// }
