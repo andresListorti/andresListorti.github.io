@@ -11,10 +11,12 @@ En hombre.html y mujer.html, se ha implementado Grid System para agregar y separ
 Se ha implementado sass, se aplican variables de distintos tipo de dato, las anidaciones, en todos los casos, fueron modificadas a la sintaxis sass y se agregaron nuevas para mejor lectura.
 Asimismo, se separan las media queries en un "partial" y se reciben con "@import" para mejor lectura.
 Se aplicaron tecnicas de SEO en todas las paginas con "keywords" y "description"
+El sitio fue subido a Vercel
 
 
-- Deployado en https://andreslistorti.github.io/
+- Deployado primeramente en https://andreslistorti.github.io/
 - Repositorio gitHub https://github.com/andresListorti/andresListorti.github.io
+- Deployado finalmente en https://genaro.vercel.app/
 
 Saludos!
 
